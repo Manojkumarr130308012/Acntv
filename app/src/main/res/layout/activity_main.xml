@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:gravity="bottom"
+    android:layout_gravity="bottom"
+    tools:context=".MainActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/image"
+        android:src="@drawable/gif"
+      />
+
+    //logo
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:background="@color/purple_700"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:textColor="@color/white"
+            android:background="@drawable/acn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Neophron Technologies"/>
+
+    </LinearLayout>
+//area
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#FBDA46"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="AREA COVERAGE">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="ERODE,TIRUPUR,NAMAKKAL"></TextView>
+    </LinearLayout>
+    //font
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#FBDA46"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"></TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_weight=".7"
+            android:src="@drawable/fb"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/fb"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="Neophron Technologies"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"></TextView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="16dp"
+            android:layout_weight=".65"
+            android:src="@drawable/web"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/web"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+       android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="Neophron Technologies"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"></TextView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_weight=".65"
+            android:src="@drawable/wat"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/watsapp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="Neophron Technologies"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"></TextView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_weight=".65"
+            android:src="@drawable/you"
+            android:layout_gravity="center"
+            android:id="@+id/youtube"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+
+            android:layout_marginBottom="16dp"
+            android:text="Neophron Technologies"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"></TextView>
+    </LinearLayout>
+    //contact
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_weight=".8"
+            android:src="@drawable/ic_baseline_tele">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9715806000"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+        ></TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_weight=".8"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_baseline_phone">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9626326000"
+
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>
+
+        <TextView
+            android:layout_width="2dp"
+            android:padding="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></TextView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_weight=".8"
+                    android:src="@drawable/ic_baseline_language">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="acntverode.business.site"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12dp"
+                    ></TextView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_weight=".8"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_baseline_phone">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="acntverd@gmail.com"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12dp"
+                    ></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    //developer
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/blue"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toTopOf="parent">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white"
+         android:textSize="14dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:text="DEVELOPED BY">
+
+     </TextView>
+
+             <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+                 android:id="@+id/url"
+            android:text="Neophron Technologies">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
