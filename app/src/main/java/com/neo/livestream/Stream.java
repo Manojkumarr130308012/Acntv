@@ -85,7 +85,7 @@ public class Stream extends AppCompatActivity {
             Intent i = getIntent();
             link = i.getStringExtra("channelling");
 
-        url = "https://5c75277727cd1.streamlock.net:443/rcntv/rcntv/playlist.m3u8";
+        url = "rtmp://95.216.226.165:1935/babatv  ";
 
 
 
@@ -140,6 +140,13 @@ public class Stream extends AppCompatActivity {
                 @Override
                 public void onLoadingChanged(boolean isLoading) {
                     Log.d(TAG, "onLoadingChanged: " + isLoading);
+                    if (!isLoading){
+                        player.stop();
+                        Intent i=new Intent(Stream.this,Stream.class);
+                        startActivity(i);
+                        finish();
+                    }
+
                 }
 
                 @Override
@@ -163,8 +170,10 @@ public class Stream extends AppCompatActivity {
                 @Override
                 public void onPlayerError(ExoPlaybackException error) {
                     Log.e(TAG, "onPlayerError: ", error);
-                    player.stop();
-                   errorDialog();
+                    Uri uri = Uri.parse(url);
+                    MediaSource mediaSource = buildMediaSource(uri, null);
+                    player.prepare(mediaSource);
+                    player.setPlayWhenReady(true);
                 }
 
                 @Override
@@ -247,6 +256,9 @@ public class Stream extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         player.stop();
+        Intent i =new Intent(Stream.this,MainActivity.class);
+        startActivity(i);
+        finish();
     }
 
     protected void onStart() {
@@ -257,10 +269,6 @@ public class Stream extends AppCompatActivity {
         player.setPlayWhenReady(true);
     }
 
-    protected void onStop() {
-        super.onStop();
-        player.stop();
-    }
 
 
     public void errorDialog() {
